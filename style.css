@@ -595,22 +595,31 @@ h1{
   }
   /* FIN TEAM */
 
-    
+
   /* FOOTER */
   footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: normal;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    height: 250px;
+    height: auto;
     background-color: #000;
     color: #ffffff;
   }
-  footer .columns{
+
+  footer .rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  footer .rows .columns{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* padding: 10px; */
   }
   
   footer div div a {
@@ -619,6 +628,16 @@ h1{
   }
   
   footer div div a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  footer h4 a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  footer h4 a:hover{
     color: #ffffff;
     text-decoration: underline;
   }
