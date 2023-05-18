@@ -476,22 +476,18 @@
     justify-content: center;
     align-items: center;
     
-    height: 250px;
+    height: auto;
     background-color: #000;
     color: #ffffff;
   }
 
-  footer .rows {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-
-  footer .rows .columns{
+  footer .columns{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     gap: 10px;
+    margin-bottom: 30px;
   }
   
   footer div div a {
