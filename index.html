@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <div class="container-principal"> -->
+
+    <ul>
+      <li><a href="#about" onclick="transitionScroll('about')">Inicio</a></li>
+      <li><a href="#mision-vision" onclick="transitionScroll('mision-vision')">Mision Vision</a></li>
+      <li><a href="#services" onclick="transitionScroll('services')">Servicios</a></li>
+      <li><a href="#tools" onclick="transitionScroll('tools')">Herramientas</a></li>
+      <li><a href="#plans" onclick="transitionScroll('plans')">Planes</a></li>
+    </ul>
+    
+    <section id="about" class=" about-me">
+
+      <div class="content">
+        <h1>Quienes somos</h1>
+        <p>
+          Somos un equipo que combina nuestras habilidades y experiencia para brindar un servicio 
+          innovador que utiliza inteligencia artificial para producir clases dinámicas. Estamos 
+          comprometidos con mejorar la educación a través de la tecnología y creemos que el uso 
+          de la IA puede transformar el proceso de aprendizaje.
+        </p>
+        <button id="btn-about">Iniciar</button>
+      </div>
+    </section>
+
+    <section id="mision-vision" class="hidden container-mision-vision">
+
+      <div class="container-mision-content-image">
+        <div class="card">
+          <h1>Mision</h1>
+          <p>
+            Ayudar a los educadores a preparar clases más interactivas y personalizadas, 
+            para que los estudiantes puedan aprender de manera más efectiva y disfruten 
+            del proceso. Creemos que la educación es un derecho y queremos hacerla más accesible 
+            y efectiva para todos. Con nuestro enfoque en la innovación y la calidad, queremos 
+            transformar la forma en que se enseña y se aprende.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-vision-content-image">
+        <div class="card">
+          <h1>vision</h1>
+          <p>
+            Impulsar el cambio en la educación a través del poder de la tecnología y la 
+            inteligencia artificial. Queremos cambiar el proceso de aprendizaje y hacer 
+            que la educación sea más personal, accesible y efectiva para todos. Creemos 
+            que cada estudiante es único y tiene un potencial ilimitado, y nuestro objetivo 
+            es ayudar a los educadores a desbloquear ese potencial haciendo que las aulas 
+            sean más dinámicas e interactivas.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="services" class="hidden container-services">
+      <h1>Servicios</h1>
+      <div class="card-v-r">
+        <div class="card-v-content">
+          <h3 class="card-v-title">
+            Diseño de lecciones dinamicas
+          </h3>
+          <p class="card-v-text">
+            Creación de planes de lecciones que incorporen tecnología y metodologías 
+            innovadoras para mejorar el aprendizaje.
+          </p>
+        </div>
+        <div class="images">
+          <img class="card-v-images" src="./imgs/Services/dynamic-lessons.jpg" alt="">
+        </div>
+      </div>
+      
+      <div class="card-v">
+        <div class="card-v-content">
+          <h3 class="card-v-title">
+            Implementación de tecnología educativa
+          </h3>
+          <p class="card-v-text">
+            Integración de tecnologías educativas 
+            avanzadas, como la IA, para personalizar el aprendizaje y mejorar la efectividad de las clases.
+          </p>
+        </div>
+        <div class="image">
+          <img class="card-v-images" src="./imgs/Services/impement-tecnologies.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="card-v-r">
+        <div class="card-v-content">
+          <h3 class="card-v-title">
+            Capacitación en tecnología educativa
+          </h3>
+          <p class="card-v-text">
+            Capacitación y entrenamiento de los educadores en el uso de tecnología educativa y 
+            herramientas de IA para la preparación de clases dinámicas.
+          </p>
+
+        </div>
+        <div class="images">
+          <img class="card-v-images" src="./imgs/Services/training-sessions.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="card-v">
+        <div class="card-v-content">
+          <h3 class="card-v-title">
+            Desarrollo de contenidos educativos
+          </h3>
+          <p class="card-v-text">
+            Creación de contenidos educativos innovadores y personalizados, adaptados a las necesidades 
+            de los estudiantes y a los objetivos de aprendizaje.
+          </p>
+        </div>
+        <div class="images">
+          <img class="card-v-images" src="./imgs//Services/8104960.jpg" alt="">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="tools" class="hidden container-tools">
+      <h1>Herramientas</h1>
+      <div class="card-tools">
+
+        <div class="card">
+          <img src="./imgs/ChatGpt.png" alt="">
+          <div class="content">
+            <h2>ChatGPT</h2>
+            <p>
+              Inteligencia artificial avanzada que puede responder preguntas complejas
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./imgs/Kahoot.png" alt="">
+          <div class="content">
+            <h2>Kahoot</h2>
+            <p>
+              Plataforma interactiva de aprendizaje y evaluación en línea
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./imgs/tome-app.svg" alt="">
+          <div class="content">
+            <h2>Tome.app</h2>
+            <p>
+              Plataforma de gestión de tareas y proyectos en línea
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="plans" class="hidden container-services-plans">
+      <h1>Planes</h1>
+        <div class="services">
+          <div class="card">
+            <h1 class="title">
+              Plan básico
+            </h1>
+            <div class="content">
+              -Este plan incluye de 5 a 10 horas  &nbsp;de capacitación en tecnología &nbsp;educativa<br/> <br/>
+              -Diseño de lecciones dinámicas <br/><br/>
+              -Asesoramiento personalizado &nbsp;durante 1 hora por semana
+            </div>
+            <button>Seleccionar</button>
+            <!-- <div class="price">
+              $200.000 & $500.000
+            </div> -->
+          </div>
+  
+          <div class="card-c">
+            <h1 class="title">
+              Plan estándar
+            </h1>
+            <div class="content">
+              -Este plan incluye de 10 a 20 &nbsp;horas de capacitación<br/><br/>
+              -Asesoramiento personalizado &nbsp;durante 2 horas por semana<br/><br/>
+              -Diseño y desarrollo de contenidos &nbsp;educativos personalizados<br/><br/>
+              -Tecnología avanzada para &nbsp;mejorar el aprendizaje
+            </div>
+            <button>Seleccionar</button>
+            <!-- <div class="price">
+              $500.000 & $ 800.000
+            </div> -->
+          </div>
+  
+          <div class="card-r">
+            <h1 class="title">
+              Plan premium
+            </h1>
+            <div class="content">
+              -Este plan incluye de 20 a 40 &nbsp;horas de capacitación avanzada &nbsp;en tecnología educativa y &nbsp;herramientas de IA<br/><br/>
+              -Asesoramiento personalizado de &nbsp;3 a 4 horas por semana
+            </div>
+            <button>Seleccionar</button>
+            <!-- <div class="price">
+              $800.000 & $1.100.000
+            </div> -->
+          </div>
+        </div>
+    </section>
+
+    <section id="team" class="hidden container-team">
+      <h1 class="title">Equipo</h1>
+      <div class="container-team-cards">
+        <div class="card">
+          <img src="./imgs//Equipo-trabajo//Andres.jpeg" alt="">
+          <div class="details">
+            <h1>Andres Quintero</h1>
+            <p>
+              Como desarrollador y parte del equipo de aprendizaje de 
+              Innovaciass, tendre el placer de poder ayudarte a crear y ampliar tus conocimientos
+              en las herramientas que estamos brindando.
+            </p>
+          </div>
+        </div>
+
+        
+        <div class="card">
+          <img src="./imgs//Equipo-trabajo//Laura.jpeg"  alt="">
+          <div class="details">
+            <h1>Laura Seña</h1>
+            <p>
+              Como creadora de contenido y parte del equipo de trabajo de Innovaclass, 
+              tendré el placer de ayudarte con soluciones educativas innovadoras para 
+              desarrollar recursos y herramientas que promuevan un aprendizaje efectivo y significativo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="columns">
+        <h2>Redes sociales</h2>
+        <div class="columns">
+          <h3>Facebook</h3>
+          <a href="https://www.facebook.com/andresfelipe.quinterobautista/">Andres Quintero</a>
+          <a href="https://www.facebook.com/laura.sena.0301?mibextid=ZbWKwL">Laura Seña</a>
+        </div>
+      </div>
+      
+      <div class="columns">
+        <h2>Redes sociales</h2>
+        <div class="columns">
+          <h3>Github</h3>
+          <a href="https://github.com/andres-021">Andres Quintero</a>
+        </div>
+      </div>
+
+      <!-- <div class="columns">
+        <h2>Contato</h2>
+        <button>Generar codigo QR</button>
+      </div> -->
+    </footer>
+
+  <!-- </div> -->
+  
+  <script src="./script.js"></script>
+</body>
+</html>
