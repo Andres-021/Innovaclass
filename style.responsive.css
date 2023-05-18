@@ -1,122 +1,19 @@
-body{
-  max-width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  font-family: roboto;
-  background-color: #ffffff;
-  scroll-behavior: smooth
-  /* background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/wallpaper.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; */
-}
-
-
-@font-face {
-  font-family: 'roboto';
-  src: url('./fonts/roboto/Roboto-Regular.ttf') format('truetype');
-  font-style: normal;
-  /* font-weight: normal; */
-}
-/* 
-h1{
-  font-size: 19px;
-} */
-
-h1, h2, h3{
-  font-weight: bolder;
-}
-
-p{
-  font-weight: 100;
-}
-
-.hidden{
-  opacity: 0;
-  transition: all 1s;
-}
-
-.show{
-  opacity: 1;
-}
-
-.smooth-scroll{
-  transition: all .5s ease-in-out;
-}
-
-h1{
-  /* font-size: 3em; */
-}
-
-/* Contenedor principal */
-/* .container-principal{
-  width: 100%;
-  height: 100vh;
-  background-color: aquamarine;
-} */
-@media(min-width: 768px){
-  /* BARRA DE NAVEGACION */
-  ul {
-    position: fixed;
-    display: flex;
-    justify-content: end;
-    list-style-type: none;
-    width: 100%;
-    height: 70px;
-    top: 0;
-    z-index: 9;
-    /* float: left; */
-    margin: 0;
-    gap: 5px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #333;
-  }
-    
-  li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-  
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-    
-  li a:hover {
-    float: left;
-    font-size: 15px;
-    background-color: #797979;
-    cursor: pointer;
-  }
-  /* FIN BARRA DE NAVEGACION */
-  
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 552px) {
   /* ABOUT */
   .about-me{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-sizing: border-box;
-    width: 100%;
     height: 100vh;
     /* padding: 10px; */
     background-color: transparent;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1em;
     
     background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,.1)), url('./imgs/About/about.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
   
@@ -134,7 +31,7 @@ h1{
     border-style: none;
     background-color: rgb(0, 174, 255);
     color: #ffffff;
-    font-size: .9em;
+    font-size: 1.5em;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
@@ -143,34 +40,23 @@ h1{
     transition: fon-size .9s;
   }
   
-  .about-me .content button:hover{
-    border-style: none;
-    background-color: rgb(4, 146, 212);
-    color: #ffffff;
-    font-size: .7em;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 250px;
-    height: 50px;
-  }
-  
-  .about-me img{
-    width: 450px;
-    height: 450px;
-  }
+  /* .about-me img{
+    width: auto;
+    height: auto;
+  } */
   /* FIN ABOUT */
-  
+
   /* MISION VISION */
   .container-mision-vision{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     align-items: center;
     text-align: center;
     /* gap: 15px; */
     width: 100%;
     height: 100vh;
-    font-size: 1.2em;
+    font-size: .9em;
     /* box-shadow: 0px 0px 5px #000; */
     /* box-sizing: border-box; */
     /* background-color: aliceblue; */
@@ -178,8 +64,8 @@ h1{
   
   .container-mision-vision .container-mision-content-image{
     position: relative;
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,8 +77,8 @@ h1{
   
   .container-mision-vision .container-vision-content-image{
     position: relative;
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,8 +94,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     padding: 30px;
     color: #ffffff;
     opacity: 1;
@@ -217,7 +103,7 @@ h1{
     /* box-shadow: 0px 0px 2px 0px #000; */
   }
   /* FIN MISION VISION */
-  
+
   /* SERVICES */
   .container-services{
     display: flex;
@@ -226,46 +112,48 @@ h1{
     align-items: center;
     width: 100%;
     height: auto;
+    gap: 10px;
     box-sizing: border-box;
-    padding: 80px;
+    /* padding: 80px; */
     background-color: #ffffff;
   }
   
   .container-services h1{
-    font-size: 2em;
+    font-size: 1.8em;
+    margin-bottom: 0;
   }
   
   .container-services .card-v{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
   
     justify-content: center;
     align-items: center;
     text-align: center;
     
-    width: auto;
-    height: 100vh;
-    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    font-size: .9em;
     background-color: #ffffff;
     border-radius: 5px;
     /* box-shadow: 0px 0px 2px 0px #000; */
-    padding: 10px;
+    padding: 20px;
     transition: width 0.5s, font-size 0.5s;
   }
   
   .container-services .card-v-r{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 8px;
   
     justify-content: center;
     align-items: center;
     text-align: center;
     
-    width: auto;
-    height: 100vh;
-    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    font-size: .9em;
     background-color: #ffffff;
     border-radius: 5px;
     /* box-shadow: 0px 0px 2px 0px #000; */
@@ -283,16 +171,16 @@ h1{
   }
   
   .card-v-images{
-    width: 450px;
-    height: 350px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
   }
   
   .container-services .card-v .card-v-content{
-    width: 50%;
+    width: 80%;
   }
   .container-services .card-v-r .card-v-content{
-    width: 50%;
+    width: 80%;
   }
   
   .card-v-title { 
@@ -302,21 +190,21 @@ h1{
   
   .card-v-texto { grid-area: card-v-texto; }
   /* FIN SERVICES */
-  
+
   /* TOOLS */
   .container-tools{
     display: flex;
     width: 100%;
-    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f1f2f3;
+    font-size: .9em;
   }
   
   .container-tools h1{
-    font-size: 2em;
-    margin-bottom: 150px;
+    font-size: 1.8em;
+    margin-bottom: 50px;
   }
   
   .container-tools .card-tools{
@@ -328,48 +216,31 @@ h1{
   .container-tools .card-tools .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: auto;
     transition: width .5s, height .5s, border-radius .5s;
     /* background-color: #b8b8b8; */
   }
   
   .container-tools .card-tools .card img{
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
-  
-  
-  /* .container-tools .card-tools .card:hover{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: #b8b8b8;
-  } */
-  
-  /* .container-tools .card-tools .card .content{
-    display: none;
-  } */
   
   .container-tools .card-tools .card .content h2{
     margin: 0;
   }
   
   .container-tools .card-tools .card .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin: 0;
-    padding-top: 0;
-    height: 150px;
+    height: auto;
   }
   /* FIN TOOLS */
-  
+
   
   /* SERVICES PLAN */
   .container-services-plans{
@@ -383,27 +254,21 @@ h1{
   }
   
   .container-services-plans h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 40px;
   }
   
   .container-services-plans .services{
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: 30px;
+    padding: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    /* margin-left: 50px; */
   }
-  
-  /* .container-services-plans .services:nth-child(1){
-    margin-top: 0;
-  }
-  
-  .container-services-plans .services:nth-child(3){
-    top: 0;
-  }
-  .container-services-plans .services:nth-child(2){
-    margin-top: 80px;
-  } */
-  
   
   /* PLANS LEFT */
   .container-services-plans .services .card{
@@ -415,6 +280,8 @@ h1{
     border-radius: 0 40px;
     background-color: #ffffff;
     box-shadow: 1px 1px 8px 0px #000;
+    
+    /* white-space: nowrap; */
   }
   
   .container-services-plans .services .card .title{
@@ -546,7 +413,7 @@ h1{
   /* FIN PLAN RIGHT */
   
   /* FIN SERVICES PLAN */
-  
+
   
   /* TEAM */
   .container-team{
@@ -556,18 +423,20 @@ h1{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #f1f2f3;;
+    background-color: #f1f2f3;
+    padding-bottom: 130px;
   }
   
   .container-team .title{
-    font-size: 2em;
-    margin-bottom: 130px;
+    font-size: 1.8em;
+    margin-bottom: 30px;
   }
   
   .container-team .container-team-cards{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     gap: 10px;
     width: 100%;
   
@@ -594,7 +463,7 @@ h1{
   }
   /* FIN TEAM */
 
-    
+      
   /* FOOTER */
   footer{
     display: flex;
@@ -622,36 +491,4 @@ h1{
     text-decoration: underline;
   }
   /* FIN FOOTER */
-
-  
-  
-  /* SCROLL */
-  /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
-  
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-::-webkit-scrollbar:vertical {
-    width:15px;
-}
-
-::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
-    display: none;
-} 
-
-::-webkit-scrollbar:horizontal {
-    height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #797979;
-    border-radius: 20px;
-    border: 2px solid#f1f2f3;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-}
-/* FIN SCROLL */
 }
