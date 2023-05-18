@@ -496,20 +496,10 @@
   
   footer div div a {
     color: #ffffff;
-    text-decoration: none;
-  }
-  
-  footer div div a:hover {
-    color: #ffffff;
     text-decoration: underline;
   }
 
   footer h4 a{
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  footer h4 a:hover{
     color: #ffffff;
     text-decoration: underline;
   }
