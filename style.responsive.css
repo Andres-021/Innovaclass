@@ -39,11 +39,6 @@
     height: 50px;
     transition: fon-size .9s;
   }
-  
-  /* .about-me img{
-    width: auto;
-    height: auto;
-  } */
   /* FIN ABOUT */
 
   /* MISION VISION */
@@ -112,6 +107,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    padding-bottom: 100px;
     gap: 10px;
     box-sizing: border-box;
     /* padding: 80px; */
@@ -132,7 +128,7 @@
     align-items: center;
     text-align: center;
     
-    width: 100%;
+    max-width: 100%;
     height: auto;
     font-size: .9em;
     background-color: #ffffff;
@@ -151,7 +147,7 @@
     align-items: center;
     text-align: center;
     
-    width: 100%;
+    max-width: 100%;
     height: auto;
     font-size: .9em;
     background-color: #ffffff;
@@ -226,8 +222,8 @@
   
   .container-tools .card-tools .card img{
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   
   .container-tools .card-tools .card .content h2{
@@ -238,6 +234,7 @@
     text-align: center;
     margin: 0;
     height: auto;
+    font-size: 0.9em;
   }
   /* FIN TOOLS */
 
@@ -248,9 +245,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-color: #ffffff;
+    
+    /* white-space: nowrap; */
   }
   
   .container-services-plans h1 {
@@ -260,14 +259,18 @@
   
   .container-services-plans .services{
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-wrap: nowrap;
+    /* flex-direction: row; */
+    max-width: 90%;
     gap: 30px;
     padding: 20px;
-    overflow-x: scroll;
+    overflow: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    
     /* margin-left: 50px; */
+    /* white-space: nowrap; */
+    /* display: block; */
   }
   
   /* PLANS LEFT */
@@ -281,7 +284,6 @@
     background-color: #ffffff;
     box-shadow: 1px 1px 8px 0px #000;
     
-    /* white-space: nowrap; */
   }
   
   .container-services-plans .services .card .title{
@@ -422,7 +424,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #f1f2f3;
     padding-bottom: 130px;
   }
@@ -437,17 +439,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    width: 100%;
-  
+    gap: 20px;
+    
   }
   
   .container-team .container-team-cards .card{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 20px;
-    width: 500px;
-    padding: 10px;
+    width: 60%;
+    padding: 20px;
     box-shadow: 1px 1px 8px 0px #000;
     border-radius: 10px;
     background-color: #ffffff;
